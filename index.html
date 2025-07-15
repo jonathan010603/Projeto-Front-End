@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Web - Jonathan Silva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Projeto Front-End - Jonathan Silva</h1>
+        <nav>
+            <ul>
+                <li><a href="#integrantes">Integrantes</a></li>
+                <li><a href="#tarefas">Tarefas</a></li>
+                <li><a href="#sobre">Sobre o Projeto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="integrantes">
+        <h2>Integrantes</h2>
+        <img src="assets/jonathan.png" alt="Foto de perfil">
+        <p><strong>Nome:</strong> Jonathan Silva</p>
+        <p><strong>Função:</strong> Desenvolvedor Front-End</p>
+        <p><strong>Sobre:</strong> Desenvolvedor Fullstack Pleno na empresa Bar Fácil. Aluno do curso de Análise e
+            Desenvolvimento de Sistemas na Uninter.</br>
+            Tenho interesse na área de Arquitetura de Software, além de game development e desenho nas horas vagas.
+        </p>
+        <p>
+            <a href="https://github.com/jonathan010603" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/dsjonat/" target="_blank">LinkedIn</a>
+        </p>
+    </div>
+
+    <div id="formulario">
+        <h2>Adicionar Integrante (Simulação)</h2>
+        <form onsubmit="adicionarIntegrante(event)">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="cargo" placeholder="Função" required>
+            <textarea id="descricao" placeholder="Descrição" required></textarea>
+            <button type="submit">Adicionar Integrante</button>
+        </form>
+    </div>
+
+    <div id="cartoes"></div>
+
+    <div id="tarefas">
+        <h2>Tabela de Tarefas</h2>
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>RU</th>
+                <th>Responsabilidade</th>
+            </tr>
+            <tr>
+                <td>Jonathan Silva</td>
+                <td>5416917</td>
+                <td>Estruturação do HTML e organização semântica das seções</td>
+            </tr>
+            <tr>
+                <td>Jonathan Silva</td>
+                <td>5416917</td>
+                <td>Desenvolvimento do layout e estilização com CSS</td>
+            </tr>
+            <tr>
+                <td>Jonathan Silva</td>
+                <td>5416917</td>
+                <td>Criação de interatividade com JavaScript (manipulação de DOM)</td>
+            </tr>
+            <tr>
+                <td>Jonathan Silva</td>
+                <td>5416917</td>
+                <td>Implementação da funcionalidade dinâmica de criação de perfis</td>
+            </tr>
+            <tr>
+                <td>Jonathan Silva</td>
+                <td>5416917</td>
+                <td>Integração entre HTML, CSS e JS</td>
+            </tr>
+            <tr>
+                <td>Jonathan Silva</td>
+                <td>5416917</td>
+                <td>Testes de funcionamento e validação dos recursos</td>
+            </tr>
+            <tr>
+                <td>Jonathan Silva</td>
+                <td>5416917</td>
+                <td>Documentação e organização dos arquivos do projeto</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>Este projeto tem como objetivo demonstrar o uso de HTML, CSS e JavaScript para construção de uma página
+            interativa e
+            dinâmica.</p>
+        <p>Foi implementado um <strong>gerador de cartões de perfil</strong>, onde o visitante pode preencher um
+            formulário e
+            criar dinamicamente novos integrantes na tela, simulando uma funcionalidade de painel administrativo.</p>
+        <p><strong>Tecnologias utilizadas:</strong> HTML5, CSS3, JavaScript</p>
+    </div>
+
+    <footer>
+        <p>Contato: jonathan010603.w@gmail.com</p>
+        <p>Desenvolvido por Jonathan Silva - 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
